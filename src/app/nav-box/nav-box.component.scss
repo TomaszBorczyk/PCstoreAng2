@@ -1,7 +1,18 @@
 header{
+  position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
     margin: 0;
-    background-color: #707070;
+    background-color: #222222;
     width: 100%;
-    padding-bottom: 20px;
     float: left;
+    margin: auto;
+
+    menu-custom{
+      float: left;
+    }
+    search-box{
+      float: right;
+    }
 }

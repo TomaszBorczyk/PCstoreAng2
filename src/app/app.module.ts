@@ -6,19 +6,27 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavBoxComponenet } from './nav-box/nav-box.component';
 import { MenuComponent } from './nav-box/menu/menu.component';
+import { SearchBoxComponent } from './nav-box/search-box/search-box.component';
+import { ContainerComponent } from './container/container.component';
+
+import { SharedService } from './services/shared.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBoxComponenet,
-    MenuComponent
+    MenuComponent,
+    SearchBoxComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [SharedService,
+              ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
